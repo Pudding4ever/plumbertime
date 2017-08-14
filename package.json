@@ -10,6 +10,6 @@
     "npm": "1.1.x"
   },
   "scripts": {
-    "start": "game.js"
+    "start": "node game.js"
   }
 }
