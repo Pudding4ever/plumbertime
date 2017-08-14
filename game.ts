@@ -1,6 +1,7 @@
 ///<reference path="_reference.ts"/>
 namespace core {
-    
+
+        export let document: "index.html";
         // declare a reference to the Preloader
         export let assets: createjs.LoadQueue;
     
