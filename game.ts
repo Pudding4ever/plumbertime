@@ -1,3 +1,4 @@
+///<reference path="_reference.ts"/>
 namespace core {
     
         // declare a reference to the Preloader
