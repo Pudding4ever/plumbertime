@@ -10,6 +10,21 @@ var scenes;
         function play() {
             _super.apply(this, arguments);
         }
+        play.prototype.Start = function () {
+            this._collision = new managers.Collision();
+            this._player = new objects.Player("player");
+            this.Player = this._player;
+            this.addChild(this._player);
+            // Add Menu Labels
+            // add this scene to the global scene container
+            core.stage.addChild(this);
+            //place player appropriately
+            this._player.placeship(200, 300);
+        };
+        play.prototype.Update = function () {
+            // scene updates happen here...
+            this._player.update();
+        };
         return play;
     }(objects.Scene));
     scenes.play = play;
